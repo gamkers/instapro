@@ -81,7 +81,7 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
                 <!-- Main Content Area -->
                 <div class="lg:col-span-3">
                     <!-- Progress Indicator -->
@@ -96,7 +96,7 @@
                                 <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-sm font-medium step-indicator active" data-step="1">
                                     1
                                 </div>
-                                <span class="ml-2 text-sm text-white step-label">Media Selection</span>
+                                <span class="ml-1.5 text-sm text-white step-label">Media</span>
                             </div>
                             <div class="flex-1 h-1 bg-border rounded-full">
                                 <div class="h-full bg-primary rounded-full transition-all duration-300" style="width: 33%" id="progress-bar"></div>
@@ -106,7 +106,7 @@
                                 <div class="w-8 h-8 bg-surface-light border border-border rounded-full flex items-center justify-center text-text-secondary text-sm font-medium step-indicator" data-step="2">
                                     2
                                 </div>
-                                <span class="ml-2 text-sm text-text-secondary step-label">Keywords</span>
+                                <span class="ml-1.5 text-sm text-text-secondary step-label">Keywords</span>
                             </div>
                             <div class="flex-1 h-1 bg-border rounded-full">
                                 <div class="h-full bg-border rounded-full transition-all duration-300" style="width: 0%"></div>
@@ -116,22 +116,22 @@
                                 <div class="w-8 h-8 bg-surface-light border border-border rounded-full flex items-center justify-center text-text-secondary text-sm font-medium step-indicator" data-step="3">
                                     3
                                 </div>
-                                <span class="ml-2 text-sm text-text-secondary step-label">Responses</span>
+                                <span class="ml-1.5 text-sm text-text-secondary step-label">Responses</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Step Content -->
-                    <div class="glass rounded-2xl p-6">
+                    <div class="glass rounded-2xl p-6 glass-content-container">
                         <!-- Step 1: Media Selection -->
-                        <div id="step-1" class="step-content">
-                            <div class="mb-6">
+                        <div id="step-1" class="step-content flex flex-col items-center w-full">
+                            <div class="mb-6 text-center w-full max-w-5xl mx-auto">
                                 <h3 class="text-2xl font-semibold text-white mb-2">Select Instagram Posts</h3>
                                 <p class="text-text-secondary">Choose the posts where you want to enable automated comment responses.</p>
                             </div>
 
                             <!-- Search and Filter -->
-                            <div class="flex flex-col md:flex-row gap-4 mb-6">
+                            <div class="flex flex-col md:flex-row gap-4 mb-6 w-full max-w-5xl mx-auto">
                                 <div class="flex-1">
                                     <div class="relative">
                                         <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -155,7 +155,7 @@
                             </div>
 
                             <!-- Media Grid -->
-                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6 w-full max-w-5xl mx-auto">
                                 <!-- Post 1 -->
                                 <div class="relative group cursor-pointer media-item" data-post-id="1">
                                     <div class="aspect-square rounded-lg overflow-hidden">
@@ -406,7 +406,7 @@
                             </div>
 
                             <!-- Selection Summary -->
-                            <div class="bg-surface/50 rounded-lg p-4 mb-6">
+                            <div class="bg-surface/50 rounded-lg p-4 mb-6 w-full max-w-5xl mx-auto">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center space-x-2">
                                         <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -624,7 +624,7 @@
                         </div>
 
                         <!-- Navigation Buttons -->
-                        <div class="flex items-center justify-between mt-8 pt-6 border-t border-border">
+                        <div class="flex items-center justify-between mt-8 pt-6 border-t border-border w-full max-w-5xl mx-auto">
                             <button class="px-6 py-3 border border-border rounded-lg text-text-secondary hover:text-white hover:border-primary transition-colors" id="prev-btn" disabled>
                                 <div class="flex items-center space-x-2">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -653,28 +653,7 @@
 
                
 
-                    <!-- Quick Tips -->
-                    <div class="glass rounded-2xl p-6">
-                        <h3 class="text-lg font-semibold text-white mb-4">Optimization Tips</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-start space-x-3">
-                                <div class="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                                <p class="text-text-secondary text-sm">Use varied response messages to avoid appearing robotic</p>
-                            </div>
-                            <div class="flex items-start space-x-3">
-                                <div class="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                                <p class="text-text-secondary text-sm">Include emojis to make responses more engaging</p>
-                            </div>
-                            <div class="flex items-start space-x-3">
-                                <div class="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                                <p class="text-text-secondary text-sm">Set response delays to appear more natural</p>
-                            </div>
-                            <div class="flex items-start space-x-3">
-                                <div class="w-2 h-2 bg-success rounded-full mt-2 flex-shrink-0"></div>
-                                <p class="text-text-secondary text-sm">Monitor performance and adjust keywords regularly</p>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
         </div>
@@ -726,10 +705,216 @@
         </div>
     </div>
 
+    <!-- Media Selection Next Step Popup -->
+    <div id="media-selection-popup" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="glass rounded-2xl p-6 max-w-md w-full text-center">
+            <div class="mb-6 flex flex-col items-center">
+                <div class="w-16 h-16 bg-success/20 rounded-full flex items-center justify-center mb-4">
+                    <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">Media Selected!</h3>
+                <p class="text-text-secondary mb-3">You've selected <span id="popup-selected-count">1</span> post(s). Ready to continue?</p>
+                <div class="flex mb-4">
+                    <div id="popup-image-container" class="w-20 h-20 rounded-md overflow-hidden mr-3 flex-shrink-0">
+                        <img id="popup-selected-image" src="" alt="Selected post" class="w-full h-full object-cover">
+                    </div>
+                    <div id="popup-caption-display" class="bg-surface/40 p-3 rounded-lg text-white text-sm flex-1 overflow-y-auto">
+                        <p id="popup-selected-caption" class="text-left"></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex justify-center space-x-4">
+                <button id="popup-select-more" class="px-6 py-3 border border-border rounded-lg text-text-secondary hover:text-white hover:border-primary transition-colors">
+                    Select More
+                </button>
+                <button id="popup-next-step" class="px-6 py-3 bg-gradient-to-r from-primary to-secondary rounded-lg text-white font-medium hover:shadow-glow transition-all duration-300">
+                    Continue to Keywords
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- JavaScript -->
     <script>
+        // Notification function
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `fixed bottom-6 right-6 px-6 py-4 rounded-lg shadow-xl z-50 flex items-center space-x-3 transition-all duration-300 transform translate-y-0 opacity-100`;
+            
+            // Set background color based on type
+            if (type === 'success') {
+                notification.classList.add('bg-success/20', 'text-success', 'border', 'border-success/30');
+            } else if (type === 'error') {
+                notification.classList.add('bg-error/20', 'text-error', 'border', 'border-error/30');
+            } else {
+                notification.classList.add('bg-primary/20', 'text-primary', 'border', 'border-primary/30');
+            }
+            
+            notification.innerHTML = `
+                <div>${message}</div>
+                <button class="text-current hover:text-white transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Auto-dismiss after 3 seconds
+            setTimeout(() => {
+                notification.classList.add('opacity-0', 'translate-y-6');
+                setTimeout(() => {
+                    notification.remove();
+                }, 300);
+            }, 3000);
+            
+            // Dismiss on click
+            notification.querySelector('button').addEventListener('click', () => {
+                notification.classList.add('opacity-0', 'translate-y-6');
+                setTimeout(() => {
+                    notification.remove();
+                }, 300);
+            });
+        }
+
         // Webhook Configuration
         const WEBHOOK_BASE_URL = 'https://n8n.gamkers.in/webhook';
+         // Show media selection popup
+        function showMediaSelectionPopup() {
+            // Update the selected count in the popup
+            const popupSelectedCount = document.getElementById('popup-selected-count');
+            popupSelectedCount.textContent = selectedPosts.length;
+            
+            // Get caption of the selected post and display it
+            const popupSelectedCaption = document.getElementById('popup-selected-caption');
+            const popupCaptionDisplay = document.getElementById('popup-caption-display');
+            
+            // If there's exactly one post selected, show its caption
+            if (selectedPosts.length === 1) {
+                const selectedPostId = selectedPosts[0];
+                const selectedPost = mediaData.find(item => String(item.id) === selectedPostId);
+                
+                if (selectedPost) {
+                    // Extract caption text
+                    let captionText = selectedPost.caption || selectedPost.caption_text || 
+                        (selectedPost.edge_media_to_caption && 
+                        selectedPost.edge_media_to_caption.edges && 
+                        selectedPost.edge_media_to_caption.edges[0] && 
+                        selectedPost.edge_media_to_caption.edges[0].node.text);
+                        
+                    popupSelectedCaption.textContent = captionText || "No caption available";
+                    popupCaptionDisplay.style.display = "block";
+                    
+                    // Update image
+                    const popupSelectedImage = document.getElementById('popup-selected-image');
+                    const popupImageContainer = document.getElementById('popup-image-container');
+                    const imageUrl = selectedPost.thumbnail_url || selectedPost.media_url || 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400';
+                    
+                    popupSelectedImage.src = imageUrl;
+                    popupSelectedImage.onerror = function() {
+                        this.src = 'https://images.unsplash.com/photo-1611262588024-d12430b98920?q=80&w=400&auto=format&fit=crop';
+                    };
+                    popupImageContainer.style.display = "block";
+                } else {
+                    popupSelectedCaption.textContent = "Caption not available";
+                    popupCaptionDisplay.style.display = "block";
+                    document.getElementById('popup-image-container').style.display = "none";
+                }
+            } 
+            // If multiple posts selected, show a message instead of specific caption
+            else if (selectedPosts.length > 1) {
+                popupSelectedCaption.textContent = "Multiple posts selected. View captions in the media grid.";
+                popupCaptionDisplay.style.display = "block";
+                document.getElementById('popup-image-container').style.display = "none";
+            } 
+            // If no posts selected (shouldn't happen), hide caption display
+            else {
+                popupCaptionDisplay.style.display = "none";
+                document.getElementById('popup-image-container').style.display = "none";
+            }
+            
+            // Get the popup element
+            const mediaSelectionPopup = document.getElementById('media-selection-popup');
+            
+            // Make sure popup is positioned properly
+            mediaSelectionPopup.classList.remove('hidden');
+            mediaSelectionPopup.style.display = 'flex';
+            
+            // Get the button elements
+            const popupNextBtn = document.getElementById('popup-next-step');
+            const popupSelectMoreBtn = document.getElementById('popup-select-more');
+            
+            // Create new buttons to ensure clean event handlers
+            const newNextBtn = document.createElement('button');
+            newNextBtn.id = 'popup-next-step';
+            newNextBtn.className = popupNextBtn.className;
+            newNextBtn.innerHTML = popupNextBtn.innerHTML;
+            
+            const newSelectMoreBtn = document.createElement('button');
+            newSelectMoreBtn.id = 'popup-select-more';
+            newSelectMoreBtn.className = popupSelectMoreBtn.className;
+            newSelectMoreBtn.innerHTML = popupSelectMoreBtn.innerHTML;
+            
+            // Replace the old buttons with the new ones
+            popupNextBtn.parentNode.replaceChild(newNextBtn, popupNextBtn);
+            popupSelectMoreBtn.parentNode.replaceChild(newSelectMoreBtn, popupSelectMoreBtn);
+            
+            // Add new event listeners
+            newNextBtn.addEventListener('click', function() {
+                // Hide popup completely
+                mediaSelectionPopup.classList.add('hidden');
+                mediaSelectionPopup.style.display = 'none';
+                
+                // Use a timeout to ensure UI updates properly
+                setTimeout(() => {
+                    // Hide all step contents first
+                    document.querySelectorAll('.step-content').forEach(content => {
+                        content.classList.add('hidden');
+                    });
+                    
+                    // Update to step 2
+                    currentStep = 2;
+                    
+                    // Show step 2 content
+                    const step2Content = document.getElementById('step-2');
+                    if (step2Content) {
+                        step2Content.classList.remove('hidden');
+                    }
+                    
+                    // Update indicators and progress
+                    updateStep(currentStep);
+                    
+                    // Show notification
+                    showNotification('✅ Moving to keyword setup...', 'success');
+                }, 100);
+            });
+            
+            newSelectMoreBtn.addEventListener('click', function() {
+                // Hide popup completely
+                mediaSelectionPopup.classList.add('hidden');
+                mediaSelectionPopup.style.display = 'none';
+            });
+            
+            // Close popup when clicking outside
+            mediaSelectionPopup.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    mediaSelectionPopup.classList.add('hidden');
+                    mediaSelectionPopup.style.display = 'none';
+                }
+            });
+            
+            // Close popup when pressing ESC
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && !mediaSelectionPopup.classList.contains('hidden')) {
+                    mediaSelectionPopup.classList.add('hidden');
+                    mediaSelectionPopup.style.display = 'none';
+                }
+            });
+        }
         
         let mediaData = [];
         let selectedPosts = [];
@@ -791,7 +976,17 @@
             }
         }
 
-        // Render media grid with actual Instagram data
+        // Helper function for Instagram data
+        function formatNumber(num) {
+            if (num >= 1000000) {
+                return (num / 1000000).toFixed(1) + 'M';
+            }
+            if (num >= 1000) {
+                return (num / 1000).toFixed(1) + 'K';
+            }
+            return num;
+        }
+        
         function renderMediaGrid(media) {
             const mediaGrid = document.querySelector('.grid.grid-cols-2.md\\:grid-cols-4.gap-4.mb-6');
             if (!mediaGrid) return;
@@ -807,24 +1002,20 @@
                 const likes = item.like_count || 0;
                 const comments = item.comments_count || 0;
                 
-                // Format timestamp
-                const postDate = new Date(item.timestamp);
-                const now = new Date();
-                const diffTime = Math.abs(now - postDate);
-                const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+                // Extract caption text
+                let caption = item.caption || item.caption_text || 
+                    (item.edge_media_to_caption && 
+                    item.edge_media_to_caption.edges && 
+                    item.edge_media_to_caption.edges[0] && 
+                    item.edge_media_to_caption.edges[0].node.text) || 
+                    "No caption available";
                 
-                let timeLabel;
-                if (diffDays === 1) {
-                    timeLabel = '1 day ago';
-                } else if (diffDays < 7) {
-                    timeLabel = `${diffDays} days ago`;
-                } else if (diffDays < 30) {
-                    const weeks = Math.floor(diffDays / 7);
-                    timeLabel = `${weeks} week${weeks > 1 ? 's' : ''} ago`;
-                } else {
-                    const months = Math.floor(diffDays / 30);
-                    timeLabel = `${months} month${months > 1 ? 's' : ''} ago`;
+                // Truncate very long captions for display
+                if (caption.length > 150) {
+                    caption = caption.substring(0, 147) + "...";
                 }
+                
+                // No timestamp needed anymore - using caption instead
                 
                 mediaItem.innerHTML = `
                     <div class="aspect-square rounded-lg overflow-hidden">
@@ -839,25 +1030,24 @@
                                         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                                         </svg>
-                                        <span>${item.like_count }</span>
+                                        <span>${formatNumber(likes)}</span>
                                     </div>
                                     <div class="flex items-center space-x-1">
                                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
                                         </svg>
-                                        <span>${item.comments_count}</span>
+                                        <span>${formatNumber(comments)}</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="absolute top-2 right-2">
-                        <input type="checkbox" class="w-5 h-5 text-primary bg-surface border-border rounded focus:ring-primary focus:ring-2 post-checkbox" />
-                    </div>
-                    <div class="mt-2">
-                        <p class="text-sm text-text-secondary">${timeLabel}</p>
-                    </div>
-                `;
+                        <div class="absolute top-2 right-2">
+                            <input type="checkbox" class="w-5 h-5 text-primary bg-surface border-border rounded focus:ring-primary focus:ring-2 post-checkbox" />
+                        </div>
+                        <div class="mt-2 px-2">
+                            <p class="text-sm text-text-secondary line-clamp-2 h-10 overflow-hidden font-medium">${caption}</p>
+                        </div>
+                    `;
                 
                 mediaGrid.appendChild(mediaItem);
             });
@@ -882,7 +1072,7 @@
             try {
                 // Get response messages
                 const responseItems = document.querySelectorAll('.response-item textarea');
-                const responses = Array.from(responseItems).map(textarea => textarea.value.trim()).filter(response => response);
+                const responses = Array.from(responseItems).map(textarea => textarea.value.trim()).filter(resp => resp);
                 
                 // Get automation settings
                 const matchType = document.querySelector('select[value="exact"]')?.value || 'contains';
@@ -970,6 +1160,11 @@
                             selectedPosts.push(postId);
                         }
                         item.classList.add('ring-2', 'ring-primary');
+                        
+                        // Show the selection popup if we're on step 1
+                        if (currentStep === 1) {
+                            showMediaSelectionPopup();
+                        }
                     } else {
                         selectedPosts = selectedPosts.filter(id => id !== postId);
                         item.classList.remove('ring-2', 'ring-primary');
@@ -1010,6 +1205,11 @@
                         item.querySelector('.post-checkbox').checked = true;
                         item.classList.add('ring-2', 'ring-primary');
                     });
+                    
+                    // If on step 1, show the selection popup
+                    if (currentStep === 1) {
+                        showMediaSelectionPopup();
+                    }
                 }
                 updateSelectionCount();
             });
@@ -1108,6 +1308,15 @@
                 
                 // Show current step content
                 document.getElementById(`step-${step}`).classList.remove('hidden');
+                
+                // Scroll to top of content area to ensure it's visible
+                const stepProgressBar = document.querySelector('.glass.rounded-2xl.p-6.mb-8');
+                if (stepProgressBar) {
+                    stepProgressBar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                } else {
+                    // Fallback if specific element not found
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
                 
                 // Update step indicators
                 stepIndicators.forEach((indicator, index) => {
